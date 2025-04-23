@@ -10,10 +10,16 @@
         "use": "@vercel/static"
       }
     ],
-    "routes": [{
+    "routes": [
+      {
         "src": "/(.*)",
         "dest": "/api/index.php"
-    }],
+    },
+    {
+      "src": "/assets/(.*)",
+      "dest": "/public/assets/$1"
+    }
+  ],
     "env": {
         "PHP_VERSION": "8.2.0",
         "APP_ENV": "production",
