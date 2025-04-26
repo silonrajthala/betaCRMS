@@ -24,7 +24,7 @@ class UserSeeder extends Seeder
             'countrycode' => '977',
             'usertype' => '1',
             'isactive' => 'Y',
-            'password'=>bcrypt('12345678')           
+            'password'=>bcrypt('*****')           
         ]);
     }
 }
