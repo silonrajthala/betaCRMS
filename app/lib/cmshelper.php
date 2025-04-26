@@ -136,7 +136,7 @@ use Illuminate\Support\Facades\DB;
        }
        else
        {
-        return array('isinsert'=>'N','isedit'=>'N','isupdate'=>'N','isdelete'=>'N');
+        return ['isget' => 'N', 'isinsert' => 'N', 'isedit' => 'N', 'isupdate' => 'N', 'isdelete' => 'N'];
        }
 
     }

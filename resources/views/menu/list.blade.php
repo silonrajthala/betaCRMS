@@ -13,10 +13,7 @@
 								<div class="card-header">
 									<h5 class="card-title">{{$title}}</h5>
 									<h6 class="card-subtitle text-muted">
-									@if($access['isinsert']=='Y')
-
 										<a href="javascript:void(0)" style="float:right" id="addData"><i class="fas fa-plus"></i> Add New </a>
-									@endif
 									</h6>
 									
 								</div>
@@ -25,6 +22,8 @@
 										<thead>
 											<tr>
 												<th>Name</th>
+												<th>Url Point</th>
+												<th>OrderBy</th>
 												<th>Action</th>
 												
 											</tr>

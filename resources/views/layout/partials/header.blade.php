@@ -129,14 +129,19 @@ $userinfo=getUserDetail();
 							</a>
 						</li>
 						<li class="nav-item dropdown">
-							<a class="nav-icon pe-md-0 dropdown-toggle" href="#" data-bs-toggle="dropdown">
-								{{$userinfo->fname.' '.$userinfo->lname}}
-							</a>
+						<a class="nav-icon pe-md-0 dropdown-toggle" href="#" data-bs-toggle="dropdown">
+						{{$userinfo->fname.' '.$userinfo->lname}} 
+						<span style="font-size: 0.7em;">({{$userinfo->typename}})</span>
+						</a>
+							
 							<div class="dropdown-menu dropdown-menu-end">
+								<a id="profile" data-user="{{json_encode($userinfo)}}" class="dropdown-item" href="#"><i class="align-middle me-1" data-feather="user"></i> Profile</a>
+								<div class="dropdown-divider"></div>
 								<a class="dropdown-item" href="{{url('/changepassword')}}"><i class="align-middle me-1" data-feather="key"></i> Change Pasword</a>
 								<div class="dropdown-divider"></div>
-								<a class="dropdown-item" href="{{url('/logout')}}">Log out</a>
+								<a class="dropdown-item" href="{{url('/logout')}}"><i class="align-middle me-1" data-feather="log-out"></i> Log out</a>
 							</div>
+							
 						</li>
 					</ul>
 				</div>

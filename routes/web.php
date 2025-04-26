@@ -5,6 +5,8 @@ use App\Http\Controllers\LoginController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\UsertypeController;
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\MenuController;
+use App\Http\Controllers\PermissionController;
 
 use App\Mail\TestMail;
 use Illuminate\Support\Facades\Mail;
@@ -26,6 +28,15 @@ Route::get('/', function () {
         Route::resource('usertype', UsertypeController::class);
 
         Route::resource('user', UserController::class);
+
+        Route::resource('menu', MenuController::class);
+
+        Route::post('permission/getSubmenuData', [PermissionController::class,'SubmenuData']);
+         Route::post('permission/getUsergroupWiseFormMenuData', [PermissionController::class,'UsergroupWiseFormMenuData']);
+         Route::post('permission/setformpermission', [PermissionController::class,'setformpermission']);
+         Route::get('permission/form', [PermissionController::class,'formPermission']);
+         Route::resource('permission', PermissionController::class);
+
 
 });
 Route::get('/send-email', function () {

@@ -12,5 +12,8 @@
 @include('layout.partials.footer')
 @endif
 @include('layout.partials.footer-scripts')
+@include('layout.partials.loading')
+@include('layout.partials.conformation')
+@include('layout.partials.profile')
  </body>
 </html>

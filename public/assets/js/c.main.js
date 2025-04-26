@@ -1,3 +1,37 @@
+$(document).ready(function() {
+
+    function showLoadingModal() {
+        $('#loadingModal').show();
+    }
+    // Function to hide the loading modal
+    function hideLoadingModal() {
+        $('#loadingModal').hide();
+    }
+    // Listen for the 'beforeunload' event to catch when the user is navigating away
+    $(window).on('beforeunload', function() {
+        showLoadingModal();
+    });
+    $(window).on('unload', function() {
+        hideLoadingModal();
+    });
+
+
+});
+
+$(document).off('click','#profile',function(){});
+$(document).on('click','#profile',function(e){
+    e.preventDefault();
+    $('#profileModal').modal('show');
+    let userObject = JSON.parse($(this).attr('data-user'));
+    $('#nameUser').text('Name: ' + userObject.fname +' '+ userObject.lname);
+    $('#emailUser').text('Email: ' + userObject.email);
+    $('#numberUser').text('Mobile No: ' + userObject.mobilenumber);
+    $('#usernameUser').text('Username: ' + userObject.username);
+
+    // console.log(username);
+
+})
+
 function ajaxRequest(dataurl,postdata,type='POST',isformupload=false)
 {
     $('#loader').show();
