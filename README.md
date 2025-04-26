@@ -7,10 +7,31 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
-## About CRMS
+# CRMS - Card Request Management System
 
-CRMS is the web application used for Card Request Management System(CRMS). In this appication the user request for card's mobile number update, account update, card activation, card status update of linked card.  
+**CRMS** is a web application designed to manage ATM card-related requests within a banking environment. It helps streamline operations like updating mobile numbers, account details, activating cards, and updating card status efficiently and securely.
 
+## Features
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+- 📱 **Mobile Number Update**: Update or correct mobile numbers linked to ATM cards.
+- 🏦 **Account Update**: Manage changes to customer account information related to their cards.
+- 🏁 **Card Activation**: Handle the secure activation process for new or replacement ATM cards.
+- 🔄 **Card Status Update**: Modify the status of ATM cards (active, blocked, expired, lost, etc.).
+
+## Technology Stack
+
+- **Backend**: PHP (Laravel framework)
+- **Frontend**: Vite +  Blade Templates
+- **Database**: MySQL 
+- **Deployment**: Vercel 
+
+## Getting Started
+
+### Prerequisites
+
+- PHP 8.2+
+- Composer
+- Node.js and NPM
+- MySQL
+- Vercel CLI 
 

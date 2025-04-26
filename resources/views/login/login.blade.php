@@ -7,7 +7,7 @@
 					<div class="d-table-cell align-middle">
 
 						<div class="text-center mt-4">
-							<h1 class="h2">Welcome To Admin Panel Access</h1>
+							<h1 class="h2">Welcome To betaCRMS Panel Access</h1>
 							<p class="lead">
 								Sign in to your account to continue
 							</p>
@@ -18,7 +18,7 @@
 								<div class="m-sm-4">
 									<div class="text-center">
 									<!-- rounded-circle -->
-										<img src="{{asset('assets/img/logo.png')}}" alt="Charles Hall" class="img-fluid " width="132" height="132" /> 
+										<!-- <img src="{{asset('assets/img/logo.png')}}" alt="Charles Hall" class="img-fluid " width="132" height="132" />  -->
 									</div>
 									<form method="post" action="{{ route('login.store') }}">
                                     {{ csrf_field() }}
