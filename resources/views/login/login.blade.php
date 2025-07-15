@@ -14,7 +14,7 @@
                          style="background-color: #2563eb; border-top-right-radius: 80px; border-bottom-right-radius: 80px;">
                         <h2 class="mb-3 fw-bold">Hello, Welcome!</h2>
                         <!-- <p class="mb-4">Don't have an account?</p>
-                        <a href="#" class="btn btn-outline-light px-4">Register</a> -->
+                        <a href="#" class="btn btn-outline-light px-4">Register</a> --> 
                     </div>
 
                     <!-- Right Panel (Login Form) -->
